@@ -1,5 +1,9 @@
 # Avalanche Field GIS
 
+🚀 **Live Demo:** https://pere347.github.io/avalanche-field-gis/
+
+📲 **Android APK:** https://github.com/pere347/avalanche-field-gis/releases/latest
+
 Mobile geospatial system for collecting, synchronizing and validating avalanche observations and accidents.
 
 Developed as my Master's Thesis in Geoinformation at the Universitat Autònoma de Barcelona in collaboration with the Avalanche Forecasting and Snow Science Unit of the Institut Cartogràfic i Geològic de Catalunya (ICGC).
@@ -11,14 +15,6 @@ Developed as my Master's Thesis in Geoinformation at the Universitat Autònoma d
 This repository contains the mobile application prototype developed as part of my Master's Thesis.
 
 The application can be used in offline mode. Backend synchronization and QGIS integration require a local FastAPI server and PostgreSQL/PostGIS database, which are not included in the public demo.
-
----
-
-## 📲 Android APK
-
-You can download and test the Android prototype from the latest release.
-
-➡️ **[Download APK](https://github.com/pere347/avalanche-field-gis/releases/latest)**
 
 ---
 
