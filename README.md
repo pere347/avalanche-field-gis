@@ -280,7 +280,7 @@ Avalanche Forecasting and Snow Science Unit
 
 ## Home Screen
 
-![Home screen](inici.jpeg)
+![Home screen](screenshots/inici.jpeg)
 
 ---
 
