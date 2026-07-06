@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPAN | Registres pendents</title>
+
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#2c3e50">
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1 class="header-title">
+            <img src="css/images/icons-svg/bars-white.svg" alt="" class="icon">
+            <span>Registres pendents</span>
+        </h1>
+    </header>
+
+    <main class="container">
+
+        <a href="index.html" class="btn btn-secondary">
+            <img src="css/images/icons-svg/back-black.svg" alt="" class="icon">
+            <span>Tornar</span>
+        </a>
+
+        <section class="card">
+            <h2 class="section-title-row">
+                <img src="css/images/icons-svg/bars-black.svg" alt="" class="icon-sm">
+                <span>Registres pendents</span>
+            </h2>
+
+            <p class="section-desc">
+                Registres guardats al dispositiu i pendents de sincronitzar.
+            </p>
+
+            <p>
+                Total pendents: <strong id="comptador-pendents">0</strong>
+            </p>
+        </section>
+
+        <div id="llista-pendents"></div>
+
+        <button id="btn-sync" class="btn btn-primary" type="button">
+            <img src="css/images/icons-svg/refresh-white.svg" alt="" class="icon">
+            <span>Sincronitzar amb servidor</span>
+        </button>
+        
+        <button id="btn-esborrar-tots" class="btn btn-danger" type="button">
+            <img src="css/images/icons-svg/delete-white.svg" alt="" class="icon">
+            <span>Esborrar tots els pendents</span>
+        </button>
+
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/localforage/1.10.0/localforage.min.js"></script>
+
+    <script src="js/common.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/pendents.js"></script>
+
+</body>
+</html>

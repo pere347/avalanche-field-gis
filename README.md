@@ -14,6 +14,14 @@ The application can be used in offline mode. Backend synchronization and QGIS in
 
 ---
 
+## 📲 Android APK
+
+You can download and test the Android prototype from the latest release.
+
+➡️ **[Download APK](https://github.com/pere347/avalanche-field-gis/releases/latest)**
+
+---
+
 ## Overview
 
 Avalanche forecasting agencies receive valuable field observations from technicians, mountain users and rescue teams. However, this information frequently arrives through different channels (emails, messaging applications, phone calls or photographs), making validation and mapping slow and inefficient.

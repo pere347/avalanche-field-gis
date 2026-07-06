@@ -1,0 +1,13 @@
+{
+    "name": "UPAN Comunicació d'Allaus",
+    "short_name": "UPAN Allaus",
+    "description": "Aplicació per comunicar observacions i accidents d'allaus.",
+    "start_url": "./index.html",
+    "scope": "./",
+    "display": "standalone",
+    "background_color": "#f4f7f6",
+    "theme_color": "#2c3e50",
+    "orientation": "portrait",
+    "lang": "ca",
+    "icons": []
+}
