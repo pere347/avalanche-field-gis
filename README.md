@@ -6,6 +6,14 @@ Developed as my Master's Thesis in Geoinformation at the Universitat Autònoma d
 
 ---
 
+## Demo version
+
+This repository contains the mobile application prototype developed as part of my Master's Thesis.
+
+The application can be used in offline mode. Backend synchronization and QGIS integration require a local FastAPI server and PostgreSQL/PostGIS database, which are not included in the public demo.
+
+---
+
 ## Overview
 
 Avalanche forecasting agencies receive valuable field observations from technicians, mountain users and rescue teams. However, this information frequently arrives through different channels (emails, messaging applications, phone calls or photographs), making validation and mapping slow and inefficient.
