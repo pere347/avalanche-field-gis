@@ -1,3 +1,3 @@
 const CONFIG = {
-    API_BASE_URL: "API-base-url"
+    API_BASE_URL: "http://YOUR_LOCAL_SERVER:8000"
 };
