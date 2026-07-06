@@ -309,7 +309,9 @@ Avalanche Forecasting and Snow Science Unit
 
 ## Pending Records
 
-![Pending records](screenshots/pend.jpeg)
+<p align="center">
+<img src="screenshots/pend.jpeg" width="300">
+</p>
 
 ---
 
