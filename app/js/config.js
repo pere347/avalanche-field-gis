@@ -1,3 +1,3 @@
 const CONFIG = {
-    API_BASE_URL: "http://192.168.8.201:8000"
+    API_BASE_URL: "API-base-url"
 };
