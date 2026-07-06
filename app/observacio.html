@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPAN | Observació d'allau</title>
+
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#2c3e50">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1 class="header-title">
+            <img src="css/images/icons-svg/location-white.svg" alt="" class="icon">
+            <span>Observació d’allau</span>
+        </h1>
+    </header>
+
+    <main class="container">
+
+        <a href="index.html" class="btn btn-secondary">
+            <img src="css/images/icons-svg/back-black.svg" alt="" class="icon">
+            <span>Tornar</span>
+        </a>
+
+        <section class="card">
+            <h2 class="section-title-row">
+                <img src="css/images/icons-svg/location-black.svg" alt="" class="icon-sm">
+                <span>Localització</span>
+            </h2>
+
+            <div class="map-wrapper">
+                <div id="map" class="map"></div>
+                <button id="btn-gps" class="btn-map-gps btn-icon-only" type="button" title="Centrar amb GPS">
+                    <img src="css/images/icons-svg/navigation-black.svg" alt="">
+                </button>
+            </div>
+
+            <p class="map-hint">
+                Toca el mapa per situar l’allau o utilitza el botó GPS.
+            </p>
+
+            <div id="coords-info" class="coords-info">
+                <span class="coords-content">
+                    <img 
+                        src="css/images/icons-svg/location-black.svg" 
+                        alt="" 
+                        class="icon-sm coords-icon"
+                    >
+                    <span>Cap ubicació seleccionada</span>
+                </span>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Dades bàsiques</h2>
+
+            <div class="camp">
+                <label for="lloc">Nom del lloc o sector *</label>
+                <input type="text" id="lloc" placeholder="Ex: Tuc de la Llança, vessant N">
+            </div>
+
+            <div class="row-2">
+                <div class="camp">
+                    <label for="data-observacio">Data d’observació</label>
+                    <input type="date" id="data-observacio">
+                </div>
+
+                <div class="camp">
+                    <label for="hora-observacio">Hora aproximada</label>
+                    <input type="time" id="hora-observacio">
+                </div>
+            </div>
+
+            <div class="camp">
+                <label for="vista-caure">Has vist caure l’allau?</label>
+                <select id="vista-caure">
+                    <option value="">Tria...</option>
+                    <option value="si">Sí</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+
+            <div class="row-2">
+                <div class="camp">
+                    <label for="mida">Mida estimada</label>
+                    <select id="mida">
+                        <option value="">Tria...</option>
+                        <option value="D1">D1 - Molt petita</option>
+                        <option value="D2">D2 - Petita</option>
+                        <option value="D3">D3 - Mitjana</option>
+                        <option value="D4">D4 - Gran</option>
+                        <option value="D5">D5 - Molt gran</option>
+                        <option value="desconeguda">No ho sé</option>
+                    </select>
+                </div>
+
+                <div class="camp">
+                    <label for="tipus">Tipus d’allau</label>
+                    <select id="tipus">
+                        <option value="">Tria...</option>
+                        <option value="placa">Placa de vent</option>
+                        <option value="neu_recent">Neu recent</option>
+                        <option value="neu_humida">Neu humida</option>
+                        <option value="lliscament">Lliscament basal</option>
+                        <option value="cfp">Capa feble persistent</option>
+                        <option value="desconegut">No ho sé</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="camp">
+                <label for="comentaris">Comentaris</label>
+                <textarea id="comentaris" placeholder="Afegeix qualsevol detall que pugui ser útil"></textarea>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2 class="section-title-row">
+                <img src="css/images/icons-svg/camera-black.svg" alt="" class="icon-sm">
+                <span>Fotografies</span>
+            </h2>
+
+            <div class="row-2">
+                <div class="camp">
+                    <label class="btn btn-photo" for="foto-camera">
+                        <img src="css/images/icons-svg/camera-white.svg" alt="" class="icon">
+                        <span>Fer foto</span>
+                    </label>
+
+                    <input 
+                        type="file" 
+                        id="foto-camera" 
+                        accept="image/*" 
+                        capture="environment"
+                    >
+                </div>
+
+                <div class="camp">
+                    <label class="btn btn-secondary" for="foto-galeria">
+                        <img src="css/images/icons-svg/plus-black.svg" alt="" class="icon">
+                        <span>Afegir de la galeria</span>
+                    </label>
+
+                    <input 
+                        type="file" 
+                        id="foto-galeria" 
+                        accept="image/*" 
+                        multiple
+                    >
+                </div>
+            </div>
+
+            <div id="preview-fotos" class="preview-container"></div>
+        </section>
+
+        <section class="card">
+            <h2>Dades de contacte</h2>
+
+            <div class="camp">
+                <label for="nom">Nom i cognoms</label>
+                <input type="text" id="nom">
+            </div>
+
+            <div class="row-2">
+                <div class="camp">
+                    <label for="telefon">Telèfon</label>
+                    <input type="tel" id="telefon">
+                </div>
+
+                <div class="camp">
+                    <label for="email">Correu electrònic</label>
+                    <input type="email" id="email">
+                </div>
+            </div>
+        </section>
+
+        <button id="btn-guardar" class="btn btn-save" type="button">
+            <img src="css/images/icons-svg/check-white.svg" alt="" class="icon">
+            <span>Guardar observació offline</span>
+        </button>
+
+    </main>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/localforage/1.10.0/localforage.min.js"></script>
+
+    <script src="js/common.js"></script>
+    <script src="js/observacio.js"></script>
+
+</body>
+</html>
