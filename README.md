@@ -280,24 +280,30 @@ Avalanche Forecasting and Snow Science Unit
 
 ## Home Screen
 
-![Home screen](screenshots/inici.jpeg)
+<p align="center">
+<img src="screenshots/inici.jpeg" width="300">
+</p>
 
 ---
 
 ## Avalanche Observation Form
 
-![Observation form](screenshots/obs1.jpeg)
-![Observation form](screenshots/obs2.jpeg)
-![Observation form](screenshots/obs3.jpeg)
+<p align="center">
+<img src="screenshots/obs1.jpeg" width="250">
+<img src="screenshots/obs2.jpeg" width="250">
+<img src="screenshots/obs3.jpeg" width="250">
+</p>
 
 ---
 
 ## Accident Form
 
-![Accident form](screenshots/acc1.jpeg)
-![Accident form](screenshots/acc2.jpeg)
-![Accident form](screenshots/acc3.jpeg)
-![Accident form](screenshots/acc4.jpeg)
+<p align="center">
+<img src="screenshots/acc1.jpeg" width="250">
+<img src="screenshots/acc2.jpeg" width="250">
+<img src="screenshots/acc3.jpeg" width="250">
+<img src="screenshots/acc4.jpeg" width="250">
+</p>
 
 ---
 
@@ -309,7 +315,7 @@ Avalanche Forecasting and Snow Science Unit
 
 ## QGIS Integration
 
-![QGIS integration](screenshots/qgis_sincronitzat.png)
+<img src="screenshots/qgis_sincronitzat.png" width="900">
 
 ---
 
